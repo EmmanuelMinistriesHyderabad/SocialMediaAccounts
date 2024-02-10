@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emmanuel Ministries Hyderabad</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      /* font-family: "Roboto","Arial",sans-serif; */
       background-color: #2fbcae;
       padding: 20px;
       text-align: center;
@@ -18,22 +20,25 @@
       flex-direction: row;
       gap:10px;
       align-items: center;
-      padding: 10px;
-      margin: 10px;
+      padding: 5px;
+      margin: 5px;
       border-radius: 10px;
       text-decoration: none;
       transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
       border: 2px solid #fff;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-
+    .links-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+}
     .youtubeLink {
       background-color: #ff0000;
       color: #fff;
     }
 
     .instagramLink {
-      background-color: #405de6;
+      background-color: #ff2f8f;
       color: #fff;
     }
 
@@ -52,10 +57,6 @@
       background-color: #333;
       border-color: #333;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    }
-
-    .icon {
-      margin-bottom: 10px;
     }
 
     .icon {
@@ -88,56 +89,166 @@
       justify-content: center;
       gap:4px;
       align-items: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .custom-icon {
       width: 48px; /* Adjust the width as needed */
       height: 48px; /* Adjust the height as needed */
     }
+    .title{
+      height: 48px;
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap:24px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .youtube{
+      color: #ff0000;
+      background-color: #fff;
+
+    }
+    .whatsapp{
+      color: #25d366;
+      background-color: #fff;
+    }
+    .instagram{
+      background-color: #fff;
+      color: #ff2f8f;
+    }
+    .facebook{
+      background-color: #fff;
+      color: #1877f2;
+    }
+    .socialIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%; /* Make it circular */
+}
+.rightIcon{
+  margin-left: auto;
+  font-size: 2em;
+}
+.contactUs{
+  background-color: #fff;
+      color: #1877f2;
+}
+.contact-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-item{
+  border:2px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  margin:4px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  text-decoration: none;
+}
+.contact-item:hover,
+.contact-item:active{
+      background-color: #50C878;
+      border-color: #50C878;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+}
+
+.contact-item-text{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #000;
+}
   </style>
 </head> 
 <body>
   <div class="header">
-  <img src="Logo.png" alt="Custom Icon" class="custom-icon">
-  <h1 >Click Below Links to Subscribe</h1>
+  <img src="assets/Logo.png" alt="Custom Icon" class="custom-icon">
+  <h1 >Follow us on social media</h1>
   </div>
+  <div class="youtube title">
+    <i class="fa fa-youtube-play icon" style="font-size:36px;"></i>
+    <p>Our Youtube Handles</p>
+  </div>
+  <div class="links-container">
   <a class="externalLink youtubeLink" href="https://youtube.com/@EmmanuelMinistriesHyderabad?si=XXFw87WR-BJMYmd1" target="_blank">
-    <i class="fa fa-youtube-play icon" style="font-size:48px;" style="font-size:48px;"></i>
+    <img src="assets/MainChannel.jpg" alt="Youtube" class="socialIcon">
     <p> Emmanuel Ministries Hyderabad</p>
-  </a>
-  <a class="externalLink whatsappLink" href="https://whatsapp.com/channel/0029VaA4qYjBFLgZvZTub820" target="_blank">
-    <i class="fa fa-whatsapp" style="font-size:48px;color:white"></i>
-    <p>Join our Whatsapp Channel</p>
+    <i class="fa fa-angle-right rightIcon"></i>
   </a>
   <a class="externalLink youtubeLink" href="https://youtube.com/@EmmanuelMinistriesOfficial?si=S5NEHfVhSNdauoTy" target="_blank">
-    <i class="fa fa-youtube-play icon" style="font-size:48px;" style="font-size:48px;"></i>
+    <img src="assets/OfficialChannel.jpg" alt="Youtube" class="socialIcon">
     <p> Emmanuel Ministries Official</p>
-  </a>
-  <a class="externalLink facebookLink" href="https://www.facebook.com/EmmanuelMinistriesChurch?sfnsn=wiwspwa&mibextid=RUbZ1f" target="_blank">
-    <i class="fa fa-facebook-f" style="font-size:48px;color:white"></i>
-    <p>Follow us on Facebook</p>
+    <i class="fa fa-angle-right rightIcon"></i>
   </a>
   <a class="externalLink youtubeLink" href="https://youtube.com/@Sis.JyothiEmmanuel?si=8YFxBD_TgG4XUVrU" target="_blank">
-    <i class="fa fa-youtube-play icon" style="font-size:48px;"></i>
+    <img src="assets/AkkaChannel.jpg" alt="Youtube" class="socialIcon">
     <p>Sister Jyothi</p>
-  </a>
-  <a class="externalLink instagramLink" href="https://www.instagram.com/emmanuelministries_official?igsh=cHNoaWhqZ2tpOHkz" target="_blank">
-    <i class="fa fa-instagram" style="font-size:48px;color:white"></i>
-    <p>Follow Official Instagram</p>
+    <i class="fa fa-angle-right rightIcon"></i>
   </a>
   <a class="externalLink youtubeLink" href="https://youtube.com/@PastorGeorgeEmmanuel?si=k3y0x40QEbd4-sQ8" target="_blank">
-    <i class="fa fa-youtube-play icon" style="font-size:48px;"></i>
+    <img src="assets/GeorgeAnnaChannel.jpg" alt="Youtube" class="socialIcon">
     <p>Pastor George</p>
-  </a>  
-  <a class="externalLink instagramLink" href="https://www.instagram.com/emmanuel_ministries_hyderabad?igsh=ZWZ2MnluYjlmOGx4" target="_blank">
-    <i class="fa fa-instagram" style="font-size:48px;color:white"></i>
-    <p>Follow us on Instagram</p>
-  </a>
+    <i class="fa fa-angle-right rightIcon"></i>
+  </a> 
   <a class="externalLink youtubeLink" href="https://youtube.com/@emmanuelmelodies6429?si=a8_dx9B9KVrq0VMU" target="_blank">
-    <i class="fa fa-youtube-play icon" style="font-size:48px;"></i>
+    <img src="assets/MelodiesChannel.jpg" alt="Youtube" class="socialIcon">
     <p>Emmanuel Melodies</p>
+    <i class="fa fa-angle-right rightIcon"></i>
   </a>
-  
-  
+</div>
+  <div class="whatsapp title">
+    <i class="fa fa-whatsapp" style="font-size:36px;"></i>
+    <p>Our Whatsapp Handles</p>
+  </div>
+
+  <a class="externalLink whatsappLink" href="https://whatsapp.com/channel/0029VaA4qYjBFLgZvZTub820" target="_blank">
+    <img src="assets/WhatsappChannel.jpg" alt="Youtube" class="socialIcon">
+    <p>Join our Whatsapp Channel</p>
+    <i class="fa fa-angle-right rightIcon"></i>
+  </a>
+
+  <div class="instagram title">
+    <i class="fa fa-instagram" style="font-size:36px;"></i>
+    <p>Our Instagram Handles</p>
+  </div>
+  </div>
+  <div class="links-container">
+  <a class="externalLink instagramLink" href="https://www.instagram.com/emmanuelministries_official?igsh=cHNoaWhqZ2tpOHkz" target="_blank">
+    <img src="assets/InstagramOfficial.jpg" alt="Youtube" class="socialIcon">
+    <p>Emmanuel Ministries Official</p>
+    <i class="fa fa-angle-right rightIcon"></i>
+  </a>
+  <a class="externalLink instagramLink" href="https://www.instagram.com/emmanuel_ministries_hyderabad?igsh=ZWZ2MnluYjlmOGx4" target="_blank">
+    <img src="assets/InstagramHyderabad.jpg" alt="Youtube" class="socialIcon">
+    <p>Emmanuel Ministries Hyderabad</p>
+    <i class="fa fa-angle-right rightIcon"></i>
+  </a>
+</div>
+  <div class="facebook title">
+    <i class="fa fa-facebook-f" style="font-size:36px;"></i>
+    <p>Our Facebook Handles</p>
+  </div>
+  <a class="externalLink facebookLink" href="https://www.facebook.com/EmmanuelMinistriesChurch?sfnsn=wiwspwa&mibextid=RUbZ1f" target="_blank">
+    <img src="assets/Facebook.jpg" alt="Youtube" class="socialIcon">
+    <p>Follow us on Facebook</p>
+    <i class="fa fa-angle-right rightIcon"></i>
+  </a>
+  <div class="contactUs">
+  <div class="title">
+    <p>Contact Us</p>
+  </div>
+  <div class="contact-items">
+    <a class="contact-item phone" href="tel:+919440147146" ><i class="fa fa-phone" style="font-size:24px"></i><p class="contact-item-text">Tap to Call us</p></a>
+    <a class="contact-item email" href="https://mail.google.com/mail/?view=cm&fs=1&to=voiceofambassadors@gmail.com" ><i class="fa fa-envelope" style="font-size:24px"></i><p class="contact-item-text">Tap to Email us</p></a>
+    <a class="contact-item prayer" href="tel:+919505440077"><p class="contact-item-text">🙏 For Prayer Requests</p></a>
+    <a class="contact-item maps" href="https://maps.app.goo.gl/uCgW4eK667RALxQ47"><i class="fa fa-map-marker" style="font-size:24px"></i><p class="contact-item-text">Locate us on maps</p></a>
+    <a class="contact-item website" href="https://emmanuelministrieshyd.com/"><i class="fa fa-globe" style="font-size:24px"></i><p class="contact-item-text">Our Website</p></a>
+  </div>
+</div>
   
 
   <script>
