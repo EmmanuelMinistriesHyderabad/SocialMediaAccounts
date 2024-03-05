@@ -333,13 +333,11 @@
       const randomDigit = Math.floor(Math.random() * 10);
       const randomLowercase = String.fromCharCode(97 + Math.floor(Math.random() * 26));
       const randomUppercase = String.fromCharCode(65 + Math.floor(Math.random() * 26));
-      const specialCharacters = '!@#$%^&*()_-+=<>?';
+      const randomLowercase2 = String.fromCharCode(97 + Math.floor(Math.random() * 26));
 
-      // Choose a random special character
-      const randomSpecial = specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
 
       // Concatenate all components to form the ID
-      const id = `${year}${month}${day}${hours}${minutes}${seconds}${milliseconds}${randomDigit}${randomLowercase}${randomUppercase}${randomSpecial}`;
+      const id = `${year}${month}${day}${hours}${minutes}${seconds}${milliseconds}${randomDigit}${randomLowercase}${randomUppercase}${randomLowercase2}`;
 
       return id;
     }
